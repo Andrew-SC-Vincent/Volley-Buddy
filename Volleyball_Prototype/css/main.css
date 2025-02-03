@@ -1,0 +1,260 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+   display: flex;
+   margin: 0;
+   flex-direction: column;
+   background: linear-gradient(135deg, #ff416c, #ff4b2b);
+   min-height: 100vh;
+}
+
+.content{
+   padding: 50px 100px 50px 100px;
+   flex: 1;
+}
+
+p,h1,h2,h3,h4,label{
+   color: white;
+   font-weight: 100;
+}
+
+.team-list{
+  width: 300px;
+  height: 50px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#team-heading{
+   display: block;
+   text-align: center;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 50px;
+   font-weight: 500;
+   margin-bottom: 10px;
+}
+
+#player-list{
+   width: 300px;
+   height: 300px;
+}
+
+#right-form-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.player-container{
+   padding: 5px;
+}
+
+#player-list-container{
+   background-color: white;
+   overflow-y: scroll;
+   width: 300px;
+   height: 300px;
+   padding: 10px;
+   margin-top: 10px;
+}
+
+#team-form{
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.buttons{
+   height: 45px;
+   width: auto;
+   background: black;
+   color: white;
+   border-radius: 22px;
+   border-style: none;
+   padding: 15px;
+   cursor: pointer;
+   font-size: 15px;
+}
+
+#generate-button{
+  width: 150px;
+}
+
+.buttons:hover{
+   background-color: #313030;
+}
+
+#bottom-heading{
+   display: block;
+   text-align: center;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 46px;
+   font-weight: 500;
+   margin-bottom: 50px;
+}
+
+.team-heading{
+   padding-bottom: 20px;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+/* Updated Team Container Styling */
+.team-container {
+   background: rgba(255, 255, 255, 0.1); /* Light transparency */
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+   backdrop-filter: blur(5px); /* Soft blur effect */
+   padding: 20px;
+   border-radius: 15px;
+   width: 250px; /* Slightly wider for better readability */
+   transition: transform 0.3s ease-in-out;
+}
+
+.team-container:hover {
+   transform: translateY(-5px); /* Subtle hover effect */
+}
+
+/* Improved Team Headers */
+.team-header {
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+}
+
+/* Enhanced Sub-Team Headers */
+#sub-team-header {
+   font-size: 16px;
+   font-weight: 500;
+   background: rgba(255, 255, 255, 0.2);
+   padding: 8px;
+   border-radius: 8px;
+   margin-bottom: 10px;
+   text-align: center;
+}
+
+/* Player Name Styling */
+.player-name {
+   background: rgba(255, 255, 255, 0.15);
+   padding: 6px 12px;
+   border-radius: 6px;
+   margin: 5px 0;
+   font-size: 14px;
+   font-weight: 300;
+   text-transform: capitalize;
+   text-align: center;
+}
+
+/* Separator for Better Readability */
+hr {
+   border: none;
+   height: 1px;
+   background: rgba(255, 255, 255, 0.3);
+   margin: 10px 0;
+}
+
+/* Proper Layout */
+#outer-team-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+}
+
+#form-container{
+   padding-bottom: 50px;
+}
+
+.logo{
+   width: 74px;
+   height: 74px;
+}
+
+.error{
+  padding-top: 10px;
+  text-align: center;
+  color: white;
+}
+
+.search{
+  background-color: white;
+  padding: 10px;
+  border-radius: 22px;
+  font-size: 20px;
+}
+
+#search-header{
+  display: flex;
+  align-items:end;
+  justify-content: space-between;
+}
+
+#search-top-header{
+  padding: 5px;
+}
+
+#check-all-container{
+  display: flex;
+  gap: 10px
+}
+
+.search:focus{
+  outline:none;
+}
+
+#teamSearch{
+  font-size: 12px;
+  display: block;
+  border: none;
+}
+
+#team-header-container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+#team-header-container p{
+  text-align: center;
+  color: black;
+}
+
+.team{
+  padding: 10px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 700px) {
+  #right-form-container{
+     padding-top:25px;
+  }
+
+  #right-form-container div{
+     padding-bottom: 50px;
+  }
+
+  .content{
+     padding-right: 10px;
+     padding-left: 10px;
+  }
+
+  #player-list-container{
+     width: auto;
+  }
+
+  #search-header{
+     gap: 15px;
+  }
+
+  .team-container{
+     margin-left: 0;
+     width: 90%;
+  }
+}
