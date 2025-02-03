@@ -30,7 +30,7 @@ VolleyBuddy is a web application that allows users to create an account, add cus
 7. Click **Import** to load the database schema.
 
 ## Running the Application
-1. Open a browser and go to http://localhost/Volleyball_Project/view/login.php.
+1. Open a browser and go to http://localhost/Volleyball_Prototype/view/login.php.
 2. **Create an account** by clicking ‘Create Account’, filling out the form, and selecting ‘Sign Up’.
 3. **Create Players:** Use the navigation bar or ‘Start Now’ button on the homepage.
 4. **View Players:** Click the ‘View Players’ button under the ‘Players’ section.
