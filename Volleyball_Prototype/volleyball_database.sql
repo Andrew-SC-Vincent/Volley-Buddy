@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 28, 2024 at 11:41 PM
+-- Generation Time: Feb 03, 2025 at 01:42 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -89,7 +89,28 @@ INSERT INTO `player` (`playerID`, `userID`, `name`, `passing`, `setting`, `servi
 (116, 8, 'Peter', 4, 4, 4, 3, 3, 3.8),
 (117, 8, 'Matthew Rosenberger', 6, 5, 6, 4, 3, 5.3),
 (118, 8, 'John Smith', 6, 7, 7, 5, 3, 6),
-(124, 1, 'Andrew Vincent', 9, 7, 8, 7, 4, 7.8);
+(124, 1, 'Andrew Vincent', 9, 7, 8, 7, 4, 7.8),
+(127, 1, 'Ice', 6, 5, 5, 3, 1, 4.9),
+(128, 1, 'Angela', 2, 2, 1, 1, 1, 1.6),
+(129, 1, 'girl', 4, 4, 5, 3, 1, 3.8),
+(130, 1, 'grey', 8, 7, 7, 6, 4, 7.1),
+(131, 1, 'Rachel', 7, 6, 6, 3, 1, 5.7),
+(132, 1, 'Josh', 6, 4, 5, 4, 2, 4.9),
+(133, 1, 'Cory', 2, 2, 2, 1, 2, 1.9),
+(134, 1, 'Shoko', 2, 1, 2, 2, 2, 1.8),
+(135, 1, 'Jerick', 7, 7, 7, 7, 7, 7),
+(136, 1, 'Yasmine', 4, 4, 4, 4, 4, 4),
+(137, 1, 'Erich', 7, 7, 7, 7, 7, 7),
+(138, 1, 'Gabbi', 5, 5, 5, 5, 5, 5),
+(139, 1, 'Rowan', 6, 6, 6, 6, 6, 6),
+(140, 1, 'Jiyoon', 2, 2, 2, 2, 1, 1.9),
+(141, 1, 'Blanca', 2, 2, 2, 2, 1, 1.9),
+(142, 1, 'Aisia', 4, 4, 4, 4, 4, 4),
+(143, 1, 'Lehi', 6, 6, 6, 6, 6, 6),
+(144, 1, 'Cassandra', 4, 4, 4, 4, 4, 4),
+(145, 1, 'Kenny', 3, 2, 2, 1, 1, 2.3),
+(146, 14, 'Andrew', 1, 1, 1, 1, 1, 1),
+(147, 14, 'Vincent', 1, 1, 1, 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -101,7 +122,7 @@ CREATE TABLE `user` (
   `userID` int(100) NOT NULL,
   `username` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL
+  `password` varchar(150) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -109,15 +130,20 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`userID`, `username`, `email`, `password`) VALUES
-(1, 'Admin', 'Admin@gmail.com', 'classclass'),
-(2, 'Andrew', 'Andrew@gmail.com', 'classclass'),
-(3, 'Waffle', 'Person@gmail.com', 'waffle'),
-(4, 'Briggsearl13', 'Briggsearl99@gmail.com', 'Briggs13'),
-(5, 'Soccer', 'Soccer@hotmail.cm', 'Johnson'),
-(6, 'Darcie', 'Darciejoy@hotmail.ca', 'pickleball'),
-(7, 'Mshurgelo', 'Mshurgelo22@gmail.com', '7helpmeok'),
-(8, 'Jennythedumbo', 'Jeannine@gmail.com', 'MangoP1chu'),
-(9, 'Andrew1', 'Andrew@example.com', 'classclass');
+(1, 'Admin', 'Admin@gmail.com', '$2y$10$HnPfyHxYafByINewekR7xuYeWZxBpbk8NZ3zMwprNEnDfAWQ1OlLC'),
+(2, 'Andrew', 'Andrew@gmail.com', '$2y$10$LpjW1wmhPtT0.8.NKPsOKOw8PbxJhiWfT70NfKotqt0NuIGPULBsq'),
+(3, 'Waffle', 'Person@gmail.com', '$2y$10$nMicTSKeC8086iOh2tu4mefMNo56iqJQKTOY7EHeJbFdXCs5Do/Im'),
+(4, 'Briggsearl13', 'Briggsearl99@gmail.com', '$2y$10$flJvJ23I5YOvRyfahmSPl.XAiPW92l.uS7sCCzZ8MTUkeyeL6ktiK'),
+(5, 'Soccer', 'Soccer@hotmail.cm', '$2y$10$vOy6rzXTpbphc0A5Ch.FIO2Z/co/VdYYcg7tdS6BuZ8gT4gQVHJ/.'),
+(6, 'Darcie', 'Darciejoy@hotmail.ca', '$2y$10$kxEEoJaOqQholsiJiFzZbuQnn0.GCfrX2kYC6V3AYz8sI8mwMDXk2'),
+(7, 'Mshurgelo', 'Mshurgelo22@gmail.com', '$2y$10$rX6FRhn6UPTdnmDPgOqrL.BAdLP3O4kh7ry.3KhaJQeOALXNhsei.'),
+(8, 'Jennythedumbo', 'Jeannine@gmail.com', '$2y$10$AeD2osiV4FleGpuw2ZYDDuhZRTGdk/oLXTPAPgvR4swEaGxt50zyq'),
+(9, 'Andrew1', 'Andrew@example.com', '$2y$10$TQoLWGKngrY997BpYB0pPucywiTI3CZGqdKjp8xn40SN8crcBb7nO'),
+(10, 'Msharma', 'Msharma@tru.ca', '$2y$10$m10T/KWu5XvCBDqd1SL5sOHhAtH4yvw7k43B940o/bIlZxHdQtfLK'),
+(11, 'Andrewv', 'Andrewv@example.com', '$2y$10$zqZP9YklNkdy5KDX4JHck.ndmNyK4zEcRP/PVwa8CLY'),
+(12, 'Bubba', 'Bubba@gmail.com', '$2y$10$Cjj5IkeJ0y58xMiB5IumH.V4pqFC4Fv9eOidAbU5kbo'),
+(14, 'Wafflesnap', 'Waffles@gmail.com', '$2y$10$wXJaPkGW7m7odpJ5kTyeTuxZzFvr7WeBLFQhu78gkVDsQ6aYhrhaC'),
+(17, 'Test4', 'Test4@gmail.com', '$2y$10$lcgRN8WqlstMP1DkydfJKu3j51jEnWUvQd2U6qF20U7tMAxE5aPHe');
 
 --
 -- Indexes for dumped tables
@@ -144,13 +170,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `player`
 --
 ALTER TABLE `player`
-  MODIFY `playerID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=127;
+  MODIFY `playerID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=149;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `userID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `userID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- Constraints for dumped tables
