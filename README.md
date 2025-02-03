@@ -1,3 +1,4 @@
+(refer to README.pdf in repository for more details and pictures)
 # VolleyBuddy
 
 VolleyBuddy is a web application that allows users to create an account, add custom players, and generate randomized and balanced volleyball teams. It provides features such as editing and deleting players and allows users to create a custom number of teams effectively.
