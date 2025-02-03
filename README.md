@@ -56,8 +56,5 @@ VolleyBuddy is a web application that allows users to create an account, add cus
 - **Expanded Skill Ratings:** Skill levels changed from **1-5** to **1-10** for better differentiation.
 - **Clickable Home Icon:** Navigation improvement for user experience.
 
-## License
-This project is licensed under the MIT License.
-
 ## Contributing
 Feel free to fork the project, create feature branches, and submit pull requests. Suggestions and improvements are always welcome!
